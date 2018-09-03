@@ -1,0 +1,29 @@
+Tabel Admin
+CREATE TABLE `apotek_sejahtera`.`admin` ( `id_admin` VARCHAR(10) NOT NULL , `nama_admin` VARCHAR(100) NOT NULL , `tanggal_lahir_admin` VARCHAR(20) NOT NULL , `alamat_admin` VARCHAR(100) NOT NULL , `telp_admin` VARCHAR(15) NULL , `jenis_kelamin_admin` CHAR(1) NOT NULL , `email_admin` VARCHAR(30) NOT NULL , `username` VARCHAR(30) NOT NULL , PRIMARY KEY (`id_admin`))
+
+Tabel Manager 
+CREATE TABLE `apotek_sejahtera`.`manager` ( `id_manager` VARCHAR(10) NOT NULL , `nama_manager` VARCHAR(100) NOT NULL , `tanggal_lahir_manager` VARCHAR(20) NOT NULL , `alamat_manager` VARCHAR(100) NOT NULL , `telp_manager` VARCHAR(15) NOT NULL , `jenis_kelamin_manager` CHAR(1) NOT NULL , `email_manager` VARCHAR(30) NOT NULL , `username` VARCHAR(30) NOT NULL , PRIMARY KEY (`id_manager`))
+
+Tabel Suplier 
+CREATE TABLE `apotek_sejahtera`.`suplier` ( `id_suplier` VARCHAR(10) NOT NULL , `nama_suplier` VARCHAR(100) NOT NULL , `tanggal_lahir_suplier` VARCHAR(20) NOT NULL , `alamat_suplier` VARCHAR(100) NOT NULL , `telp_suplier` VARCHAR(15) NOT NULL , `jenis_kelamin_suplier` CHAR(1) NOT NULL , `email_suplier` VARCHAR(30) NOT NULL , PRIMARY KEY (`id_suplier`))
+
+Tabel Bahan Obat
+CREATE TABLE `apotek_sejahtera`.`bahanObat` ( `id_obat` VARCHAR(10) NOT NULL , `nama_obat` VARCHAR(100) NOT NULL , `harga_obat` VARCHAR(20) NOT NULL , PRIMARY KEY (`id_obat`))
+
+Tabel Kasir
+CREATE TABLE `apotek_sejahtera`.`kasir` ( `id_kasir` VARCHAR(10) NOT NULL , `nama_kasir` VARCHAR(100) NOT NULL , `tanggal_lahir_kasir` VARCHAR(20) NOT NULL , `alamat_kasir` VARCHAR(100) NOT NULL , `telp_kasir` VARCHAR(15) NOT NULL , `jenis_kelamin_kasir` CHAR(1) NOT NULL , `email_kasir` VARCHAR(30) NOT NULL , `username` VARCHAR(30) NOT NULL , PRIMARY KEY (`id_kasir`))
+
+Tabel Apoteker
+CREATE TABLE `apotek_sejahtera`.`apoteker` ( `id_apoteker` VARCHAR(10) NOT NULL , `nama_apoteker` VARCHAR(100) NOT NULL , `tanggal_lahir_apoteker` VARCHAR(20) NOT NULL , `alamat_apoteker` VARCHAR(100) NOT NULL , `telp_apoteker` VARCHAR(15) NOT NULL , `jenis_kelamin_apoteker` CHAR(1) NOT NULL , `email_apoteker` VARCHAR(30), `username` VARCHAR(30) , PRIMARY KEY (`id_apoteker`))
+
+Tabel Pembeli
+CREATE TABLE `apotek_sejahtera`.`pembeli` ( `id_pembeli` VARCHAR(10) NOT NULL , `nama_pembeli` VARCHAR(100) NOT NULL , `Tanggal_lahir_pembeli` VARCHAR(20) NOT NULL , `alamat_pembeli` VARCHAR(100) NOT NULL , `telp_pembeli` VARCHAR(15) NULL , `jenis_kelamin_pembeli` CHAR(1) NOT NULL , `email_pembeli` VARCHAR(30) NOT NULL , `member` VARCHAR(30) NOT NULL , PRIMARY KEY (`id_pembeli`))
+
+Tabel Staf Gudang
+CREATE TABLE `apotek_sejahtera`.`Tabel Staf Gudang` ( `id_stafgudang` VARCHAR(10) NOT NULL , `nama_stafgudang` VARCHAR(100) NOT NULL , `tanggal_lahir_stafgudang` VARCHAR(20) NOT NULL , `alamat_stafgudang` VARCHAR(100) NOT NULL , `telp_stafgudang` VARCHAR(15) NOT NULL , `jenis_kelamin_stafgudang` CHAR(1) NOT NULL , `email_stafgudang` VARCHAR(30) NOT NULL , `username` VARCHAR(30) NOT NULL , PRIMARY KEY (`id_stafgudang`))
+
+Tabel Login
+CREATE TABLE `apotek_sejahtera`.`login` ( `username` VARCHAR(30) NOT NULL , `password` VARCHAR(100) NOT NULL , `authenfikasi` BOOLEAN NOT NULL , PRIMARY KEY (`username`))
+
+Tabel Storage
+CREATE TABLE `apotek_sejahtera`.`storage` ( `id_data` VARCHAR(10) NOT NULL , `jenis_data` VARCHAR(100) NOT NULL , `backup_data` VARCHAR(20) NOT NULL , PRIMARY KEY (`id_data`))
