@@ -1,0 +1,5 @@
+insert into admin ( id_admin, nama_admin, tanggal_lahir_admin, alamat_admin, telp_admin, jenis_kelamin, email_admin, username)
+values (01, agung, 3 mei 1990, pga, 089765432721, laki-laki, agung@gmail.com, agunghercules);
+
+
+select*from admin;
