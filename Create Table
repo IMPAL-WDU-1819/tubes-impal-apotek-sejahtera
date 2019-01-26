@@ -27,3 +27,4 @@ CREATE TABLE `apotek_sejahtera`.`login` ( `username` VARCHAR(30) NOT NULL , `pas
 
 Tabel Storage
 CREATE TABLE `apotek_sejahtera`.`storage` ( `id_data` VARCHAR(10) NOT NULL , `jenis_data` VARCHAR(100) NOT NULL , `backup_data` VARCHAR(20) NOT NULL , PRIMARY KEY (`id_data`))
+bla
